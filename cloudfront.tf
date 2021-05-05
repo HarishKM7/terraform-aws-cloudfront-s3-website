@@ -3,6 +3,7 @@ module "cloudfront" {
   version             = "2.2.0"
   price_class         = "PriceClass_100"
   wait_for_deployment = false
+  default_root_object = "index.html"
 
   origin = { s3 = {
     origin_id   = "s3"
